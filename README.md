@@ -1,4 +1,4 @@
-# unga AI Tinkering
+# UNGA AI Tinkering
 
 
 ## For transparency 
