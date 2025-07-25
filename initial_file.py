@@ -13,7 +13,35 @@ files = {
     "2019": "USA 2019.pdf",
     "2020": "USA 2020.pdf",
     "2021": "USA 2021.pdf",
-    "2022": "USA 2022.pdf"
+    "2022": "USA 2022.pdf",
+
+    "2017": "CHN 2017.pdf",
+    "2018": "CHN 2018.pdf",
+    "2019": "CHN 2019.pdf",
+    "2020": "CHN 2020.pdf",
+    "2021": "CHN 2021.pdf",
+    "2022": "CHN 2022.pdf", 
+
+    "2017": "France 2017.pdf",
+    "2018": "France 2018.pdf",
+    "2019": "France 2019.pdf",
+    "2020": "France 2020.pdf",
+    "2021": "France 2021.pdf",
+    "2022": "France 2022.pdf",
+
+    "2017": "RUS 2017.pdf",
+    "2018": "RUS 2018.pdf",
+    "2019": "RUS 2019.pdf",
+    "2020": "RUS 2020.pdf",
+    "2021": "RUS 2021.pdf",
+    "2022": "RUS 2022.pdf", 
+
+    "2017": "UK 2017.pdf",
+    "2018": "UK 2018.pdf",
+    "2019": "UK 2019.pdf",
+    "2020": "UK 2020.pdf",
+    "2021": "UK 2021.pdf",
+    "2022": "UK 2022.pdf"  
 }
 
 # Count keyword mentions
@@ -40,11 +68,11 @@ plt.figure(figsize=(10, 6))
 for kw in keywords:
     plt.plot(df.index, df[kw], marker='o', label=kw.title())
 
-plt.title("Mentions by USA in UN Speeches (2017–2022)")
+plt.title("Mentions by P5 in UN Speeches (2017–2022)")
 plt.xlabel("Year")
 plt.ylabel("Number of Mentions")
 plt.grid(True)
 plt.legend()
 plt.tight_layout()
-plt.savefig("usa_mentions_trend.png")
+plt.savefig("p5_mentions_trend.png")
 plt.show()
