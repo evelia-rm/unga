@@ -12,7 +12,8 @@ files = {
     "2018": "USA 2018.pdf",
     "2019": "USA 2019.pdf",
     "2020": "USA 2020.pdf",
-    "2021": "USA 2021.pdf"
+    "2021": "USA 2021.pdf",
+    "2022": "USA 2022.pdf"
 }
 
 # Count keyword mentions
@@ -31,7 +32,7 @@ for year, filename in files.items():
 
 # Convert to DataFrame
 df = pd.DataFrame.from_dict(results, orient="index")
-print("\nMentions of Key Topics (2017–2021):\n")
+print("\nMentions of Key Topics (2017–2022):\n")
 print(df)
 
 # Plotting
@@ -39,7 +40,7 @@ plt.figure(figsize=(10, 6))
 for kw in keywords:
     plt.plot(df.index, df[kw], marker='o', label=kw.title())
 
-plt.title("Mentions by USA in UN Speeches (2017–2021)")
+plt.title("Mentions by USA in UN Speeches (2017–2022)")
 plt.xlabel("Year")
 plt.ylabel("Number of Mentions")
 plt.grid(True)
