@@ -3,47 +3,19 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# defining years and associated filenames
-files = {
-    "2017": "USA 2017.pdf",
-    "2018": "USA 2018.pdf",
-    "2019": "USA 2019.pdf",
-    "2020": "USA 2020.pdf",
-    "2021": "USA 2021.pdf",
-    "2022": "USA 2022.pdf",
-
-    "2017": "CHN 2017.pdf",
-    "2018": "CHN 2018.pdf",
-    "2019": "CHN 2019.pdf",
-    "2020": "CHN 2020.pdf",
-    "2021": "CHN 2021.pdf",
-    "2022": "CHN 2022.pdf", 
-
-    "2017": "France 2017.pdf",
-    "2018": "France 2018.pdf",
-    "2019": "France 2019.pdf",
-    "2020": "France 2020.pdf",
-    "2021": "France 2021.pdf",
-    "2022": "France 2022.pdf",
-
-    "2017": "RUS 2017.pdf",
-    "2018": "RUS 2018.pdf",
-    "2019": "RUS 2019.pdf",
-    "2020": "RUS 2020.pdf",
-    "2021": "RUS 2021.pdf",
-    "2022": "RUS 2022.pdf", 
-
-    "2017": "UK 2017.pdf",
-    "2018": "UK 2018.pdf",
-    "2019": "UK 2019.pdf",
-    "2020": "UK 2020.pdf",
-    "2021": "UK 2021.pdf",
-    "2022": "UK 2022.pdf"  
-}
-
 # defining keywords to search, the countries, and the years
-keywords = ["climate change", "conflict", "extreme poverty"]
-countries = ["USA", "CHINA", "FRANCE", "RUSSIA", "UK"]
+#keywords = ["climate change", "conflict", "extreme poverty"] 
+keywords = [
+    "syria",
+    "yemen",
+    "sudan",
+    "south sudan",
+    "somalia",
+    "democratic republic of the congo",
+    "gaza"
+]
+
+countries = ["USA", "CHN", "FRANCE", "RUS", "UK"]
 years = [2017, 2018, 2019, 2020, 2021, 2022]
 
 # intializing nested dictionary: {keyword -> {country -> {year -> count}}}
