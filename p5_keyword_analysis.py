@@ -6,17 +6,12 @@ import matplotlib.pyplot as plt
 # defining keywords to search, the countries, and the years
 #keywords = ["climate change", "conflict", "extreme poverty"] 
 keywords = [
-    "syria",
-    "yemen",
-    "sudan",
-    "south sudan",
-    "somalia",
-    "democratic republic of the congo",
-    "gaza"
+    "people",
+    "sudan"
 ]
 
 countries = ["USA", "CHN", "FRANCE", "RUS", "UK"]
-years = [2017, 2018, 2019, 2020, 2021, 2022]
+years = [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
 
 # intializing nested dictionary: {keyword -> {country -> {year -> count}}}
 results = {
@@ -49,7 +44,7 @@ for keyword in keywords:
     for country in countries:
         plt.plot(df.index, df[country], marker='o', label=country)
 
-    plt.title(f"P5 Mentions of '{keyword.title()}' (2017–2022)")
+    plt.title(f"P5 Mentions of '{keyword.title()}' (2017–2024)")
     plt.xlabel("Year")
     plt.ylabel("Mentions")
     plt.grid(True)
