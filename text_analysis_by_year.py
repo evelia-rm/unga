@@ -3,13 +3,18 @@ import matplotlib.pyplot as plt
 
 # configuration
 country = "USA"          # Options: FRANCE, USA, UK, RUS, CHN
-year1 = "2014"
+year1 = "2023"
 year2 = "2024"
 
 # keywords to compare
 keywords = [
-    "people", 
-    "sudan"
+    "syria", 
+    "yemen", 
+    "sudan", 
+    "south sudan", 
+    "somalia", 
+    "drc", 
+    "gaza"
 ]
 
 # File names
