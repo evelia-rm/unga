@@ -5,11 +5,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # settings 
-countries = ["USA", "FRANCE", "CHN", "UK", "RUS"]
-years = ["2017", "2019", "2021", "2022"]
-keywords = ["climate change"]  # You can change this to conflict, gaza, etc.
+countries = ["USA", "RUS", "CHN", "France", "UK"]
+years = ["2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"]
+#"syria", "yemen", "south sudan", "sudan", "somalia", "drc", "gaza"
+#"climate change", "crisis" , "poverty", "extreme poverty", "conflict"
+keywords = ["poverty"] 
 
-# data countainer 
+# data container 
 data = {country: [] for country in countries}
 
 # analyzing the pdfs 
@@ -39,6 +41,7 @@ for i, (country, counts) in enumerate(data.items()):
 
 # labels and formatting
 ax.set_ylabel('Mentions')
+#ax.set_title(f"Mentions of '{', '.join(keywords)}' by " .join(countries))
 ax.set_title(f"Mentions of '{', '.join(keywords)}' by P5 Countries")
 ax.set_xticks(x)
 ax.set_xticklabels(years)
